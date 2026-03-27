@@ -1,3 +1,7 @@
+---
+title: QQ机器人部署
+data: 2026-03-27
+---
 # QQ机器人部署
 ## 实用资源
 1.[Napcat QQ](https://napneko.github.io/)

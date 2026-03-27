@@ -1,2 +1,7 @@
 title: Brianeee的博客
 subtitle: ''
+
+# 页脚配置
+site_footer:
+  # 版权信息
+  copyright: '[Copyright © 2026 Brianeee](/)'
