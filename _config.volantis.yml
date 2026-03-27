@@ -5,3 +5,7 @@ subtitle: ''
 site_footer:
   # 版权信息
   copyright: '[Copyright © 2026 Brianeee](/)'
+
+cover:
+  height_scheme: half
+  layout_scheme: search
