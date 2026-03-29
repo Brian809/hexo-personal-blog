@@ -17,4 +17,4 @@ nonebot文档推荐使用nb-cli来添加插件，由于我不太会改`pyproject
 由于我发现nonebot的llm支持严重依赖插件，agent和mcp支持不够完善，我打算换成astrbot了，我入门了astrbot插件开发（当然用了AI vibe coding来辅助），项目在[这里](https://github.com/Brian809/astrbot-plugin-aliyun-qwen-generator)。可参考一下，是一个调用阿里云百炼平台的图片生成插件。
 
 效果如下：
-![alt text](./QQ机器人部署/image.png)
+![效果](/images/QQ机器人部署/image.png)

@@ -14,7 +14,6 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "hexo": "^8.0.0",
-    "hexo-asset-image": "^1.0.0",
     "hexo-fs": "^5.0.1",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
