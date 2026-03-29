@@ -1,11 +1,134 @@
 title: Brianeee的博客
 subtitle: ''
 
+# ==================== 1. 首页标题配置 ====================
+# 修改封面标题和搜索框提示
+cover:
+  height_scheme: half  # 封面高度: full(全屏), half(半屏), medium(中等)
+  layout_scheme: search  # 布局: search(搜索), focus(聚焦), hero(英雄)
+  title: 'Brianeee的博客'  # 封面大标题（不设置则使用 site.title）
+  subtitle: '记录学习与生活'  # 封面副标题
+  search_placeholder: '搜索文章...'  # 搜索框提示文字
+  # 封面背景图片
+  background: 
+    - https://picsum.photos/1920/1080  # 可以设置多张，随机显示
+
+# ==================== 2. 导航栏配置 ====================
+# 修改顶部导航菜单
+navbar:
+  logo:  # Logo 配置
+    title: 'Brianeee'  # Logo 文字
+    # image: /images/logo.png  # Logo 图片（可选）
+  
+  # 导航菜单项
+  menu:
+    - name: 首页
+      icon: fa-solid fa-home
+      url: /
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: /archives/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: /tags/
+    - name: 关于
+      icon: fa-solid fa-user
+      url: /about/
+
+  # 右侧功能按钮
+  icons:
+    - name: github
+      icon: fab fa-github
+      url: https://github.com/Brian809
+    - name: rss
+      icon: fa-solid fa-rss
+      url: /atom.xml
+
+# ==================== 3. 评论系统配置 ====================
+# 支持多种评论系统，推荐 giscus 或 waline
+comments:
+  service: giscus  # 可选: giscus, waline, valine, gitalk, disqus
+  
+  # Giscus 配置（基于 GitHub Discussions，推荐）
+  giscus:
+    repo: Brian809/blog-comments
+    repoId: R_kgDORzzy4A
+    category: Announcements
+    categoryId: DIC_kwDORzzy4M4C5iST
+    mapping: pathname
+    strict: 0
+    reactionsEnabled: 1
+    emitMetadata: 0
+    inputPosition: bottom
+    theme: preferred_color_scheme
+    lang: zh-CN
+
+  # Waline 配置（自建评论系统）
+  # waline:
+  #   serverURL: https://your-waline-server.vercel.app  # Waline 服务器地址
+
+# ==================== 4. 信息卡片配置（侧边栏） ====================
+sidebar:
+  # 个人信息卡片
+  author:
+    enable: true
+    avatar: /images/avatar.png  # 头像路径
+    title: Brianeee
+    subtitle: 一名初三学生……
+    # 社交链接
+    social:
+      - icon: fab fa-github
+        url: https://github.com/Brian809
+      - icon: fab fa-bilibili
+        url: https://space.bilibili.com/441384336
+      - icon: fa-solid fa-envelope
+        url: mailto:brianeee@qq.com
+  # 网站信息卡片
+  info:
+    enable: true
+    title: 网站信息
+    items:
+      - name: 文章
+        icon: fa-solid fa-file-alt
+        count: 10  # 会自动统计，也可手动设置
+        url: /archives/
+      - name: 标签
+        icon: fa-solid fa-tags
+        count: 5
+        url: /tags/
+      - name: 分类
+        icon: fa-solid fa-folder-open
+        count: 3
+        url: /categories/
+
+# ==================== 其他配置 ====================
 # 页脚配置
 site_footer:
-  # 版权信息
   copyright: '[Copyright © 2026 Brianeee](/)'
+  # 页脚链接
+  links:
+    - name: GitHub
+      url: https://github.com/Brian809
+    - name: 友链
+      url: /friends/
 
-cover:
-  height_scheme: half
-  layout_scheme: search
+# 文章配置
+article:
+  # 分享按钮
+  share:
+    - wechat
+    - qq
+    - weibo
+    - twitter
+    - facebook
+  
+  # 相关文章推荐
+  related_posts:
+    enable: true
+    max_count: 5
+
+# 代码高亮
+highlight:
+  theme: github  # 主题: github, github-dark, atom-one-dark, etc.
+  copy: true  # 启用复制按钮
+  language: true  # 显示语言
