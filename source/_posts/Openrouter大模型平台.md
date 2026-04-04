@@ -1,5 +1,6 @@
 ---
 title: Openrouter大模型平台
+author: Brianeee
 date: 2026-04-04 13:29:35
 categories:
   - 技术

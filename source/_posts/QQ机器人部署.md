@@ -1,5 +1,6 @@
 ---
 title: QQ机器人部署
+author: Brianeee
 date: 2026-03-27
 categories:
   - 技术
