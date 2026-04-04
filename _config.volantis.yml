@@ -67,180 +67,15 @@ comments:
   # waline:
   #   serverURL: https://your-waline-server.vercel.app  # Waline 服务器地址
 
-# ==================== 4. 信息卡片配置（侧边栏） ====================
-# 作者信息（用于 profile 组件）
-author:
-  name: Brianeee
-  avatar: /images/avatar.png
-  bio: 一名初三学生……
+# ==================== 4. 社交链接配置 ====================
 social:
-  - icon: fab fa-github
-    url: https://github.com/Brian809
-  - icon: fab fa-bilibili
-    url: https://space.bilibili.com/441384336
   - icon: fa-solid fa-envelope
     url: mailto:brianeee@qq.com
+  - icon: fab fa-github
+    url: https://github.com/Brian809/
+  - icon: fab fa-bilibili
+    url: https://space.bilibili.com/441384336
 
-# 侧边栏组件配置
-# sidebar:
-#   # 首页侧边栏
-#   home:
-#     widgets:
-#       - profile # 个人信息卡片
-#       - category # 分类列表
-#       - tagcloud # 标签云
-#       - archive # 归档
-
-#   # 文章页侧边栏
-#   post:
-#     widgets:
-#       - profile # 个人信息卡片
-#       - toc # 文章目录
-#       - category # 分类列表
-#       - tagcloud # 标签云
-
-#   # 归档页侧边栏
-#   archive:
-#     widgets:
-#       - profile
-#       - tagcloud
-
-#   # 分类页侧边栏
-#   category:
-#     widgets:
-#       - profile
-#       - tagcloud
-
-#   # 标签页侧边栏
-#   tag:
-#     widgets:
-#       - profile
-#       - category
-
-# ==================== 其他配置 ====================
-# 页脚配置
-
-sidebar:
-  position: left # left right
-  # 主页、分类、归档等独立页面
-  for_page: [blogger, category, tagcloud, donate]
-  # layout: docs/post 这类文章页面
-  for_post: [toc]
-  # 侧边栏组件库
-  widget_library:
-    # ---------------------------------------
-    # blogger info widget
-    blogger:
-      class: blogger
-      display: [desktop, mobile] # [desktop, mobile]
-      avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
-      shape: rectangle # circle, rectangle
-      url: /about/
-      title:
-      subtitle:
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
-      social:
-        - icon: fa-solid fa-rss
-          url: /atom.xml
-        - icon: fa-solid fa-envelope
-          url: mailto:brianeee@qq.com
-        - icon: fab fa-github
-          url: https://github.com/Brian809/
-        - icon: fa-solid fa-headphones-alt
-          url: /
-    # ---------------------------------------
-    # toc widget (valid only in articles)
-    toc:
-      class: toc
-      display: [desktop, mobile] # [desktop, mobile]
-      sticky: true
-      header:
-        icon: fa-solid fa-list
-        title: 本文目录
-      list_number: false
-      min_depth: 2
-      max_depth: 5
-    # ---------------------------------------
-    # music
-    music:
-      class: music
-      display: [desktop, mobile] # [desktop, mobile]
-      pjaxReload: false
-    # ---------------------------------------
-    # category widget
-    category:
-      class: category
-      display: [desktop] # [desktop, mobile]
-      header:
-        icon: fa-solid fa-folder-open
-        title: 文章分类
-        url: /blog/categories/
-    # ---------------------------------------
-    # tagcloud widget
-    tagcloud:
-      class: tagcloud
-      display: [desktop, mobile] # [desktop, mobile]
-      header:
-        icon: fa-solid fa-tags
-        title: 热门标签
-        url: /blog/tags/
-      min_font: 14
-      max_font: 24
-      color: true
-      start_color: "#999"
-      end_color: "#555"
-    # ---------------------------------------
-    # qrcode widget
-    qrcode:
-      class: qrcode
-      display: [desktop, mobile] # [desktop, mobile]
-      height: 64px # Automatic height if not set
-      images:
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-    # ---------------------------------------
-    # webinfo widget
-    webinfo:
-      class: webinfo
-      display: [desktop]
-      header:
-        icon: fa-solid fa-award
-        title: 站点信息
-      type:
-        article:
-          enable: true
-          text: "文章数目："
-          unit: "篇"
-        runtime:
-          enable: false
-          data: "2020/01/01" # 填写建站日期
-          text: "已运行时间："
-          unit: "天"
-        wordcount:
-          enable: false
-          text: "本站总字数：" # 需要启用 wordcount
-          unit: "字"
-        visitcounter:
-          enable: true
-          siteuv:
-            text: "本站访客数："
-            unit: "人"
-          sitepv:
-            text: "本站总访问量："
-            unit: "次"
-        lastupd:
-          enable: true
-          friendlyShow: true # 更友好的时间显示
-          text: "最后活动时间："
-          unit: "日"
-    # ---------------------------------------
-    # lastupdate widget
-    lastupdate:
-      class: lastupdate
-      display: [desktop, mobile]
-      header:
-        icon: fa-solid fa-clock WISTERIA
-        title: 最近更新
 site_footer:
   copyright: "[Copyright © 2026 Brianeee](/) [Powered By Volantis](https://volantis.js.org/)"
   # 页脚链接
@@ -266,6 +101,7 @@ article:
     max_count: 5
 
 # 代码高亮
+
 highlight:
   theme: github # 主题: github, github-dark, atom-one-dark, etc.
   copy: true # 启用复制按钮
@@ -275,3 +111,63 @@ custom_css:
     height: 64px
     width: auto # auto, max
     effect: [shadow, blur] # [shadow, floatable, blur]
+
+# ==================== 5. 侧边栏配置 ====================
+sidebar:
+  position: right # 侧边栏位置: left 或 right
+
+  # 各页面显示的组件列表（按顺序）
+  for_page: [blogger, category, tagcloud]
+  for_post: [blogger, toc, category, tagcloud]
+  for_archive: [blogger, tagcloud]
+  for_category: [blogger, category]
+  for_tag: [blogger, tagcloud]
+
+  # 侧边栏组件库配置
+  widget_library:
+    # 博主信息卡片
+    blogger:
+      class: blogger
+      display: [desktop, mobile]
+      avatar: /images/avatar.jpg
+      shape: circle # circle(圆形) 或 rectangle(矩形)
+      url: /about/
+      title: Brianeee
+      subtitle: 一名初三学生……
+      jinrishici: false
+      social: social # 引用上面定义的 social 配置
+
+    # 文章目录
+    toc:
+      class: toc
+      display: [desktop, mobile]
+      sticky: true
+      header:
+        icon: fa-solid fa-list
+        title: 本文目录
+      list_number: false
+      min_depth: 2
+      max_depth: 5
+
+    # 分类组件
+    category:
+      class: category
+      display: [desktop]
+      header:
+        icon: fa-solid fa-folder-open
+        title: 文章分类
+        url: /categories/
+
+    # 标签云组件
+    tagcloud:
+      class: tagcloud
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-tags
+        title: 热门标签
+        url: /tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: "#999"
+      end_color: "#555"
