@@ -120,7 +120,7 @@ sidebar:
 # ==================== 其他配置 ====================
 # 页脚配置
 site_footer:
-  copyright: "[Copyright © 2026 Brianeee](/)"
+  copyright: "[Copyright © 2026 Brianeee](/) [Powered By Volantis](https://volantis.js.org/)"
   # 页脚链接
   links:
     - name: GitHub
