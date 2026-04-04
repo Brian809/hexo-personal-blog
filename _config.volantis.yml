@@ -117,11 +117,11 @@ sidebar:
   position: right # 侧边栏位置: left 或 right
 
   # 各页面显示的组件列表（按顺序）
-  for_page: [blogger, category, tagcloud]
-  for_post: [blogger, toc, category, tagcloud]
-  for_archive: [blogger, tagcloud]
-  for_category: [blogger, category]
-  for_tag: [blogger, tagcloud]
+  for_page: [blogger, category, tagcloud, webinfo]
+  for_post: [blogger, toc, category, tagcloud, webinfo]
+  for_archive: [blogger, tagcloud, webinfo]
+  for_category: [blogger, category, webinfo]
+  for_tag: [blogger, tagcloud, webinfo]
 
   # 侧边栏组件库配置
   widget_library:
@@ -171,3 +171,43 @@ sidebar:
       color: true
       start_color: "#999"
       end_color: "#555"
+
+# ==================== 6. 自定义脚本和样式 ====================
+# Vercount 访问量统计脚本（替代不蒜子）
+custom_js:
+  head:
+    - https://events.vercount.one/js
+
+# 插件配置
+plugins:
+  # 启用 Vercount 统计
+  vercount:
+    enable: true
+
+    # 网站信息组件（使用 Vercount 统计）
+    webinfo:
+      class: webinfo
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-chart-line
+        title: 站点信息
+      type:
+        article:
+          enable: true
+          text: "文章数目："
+          unit: "篇"
+        runtime:
+          enable: true
+          data: "2026/3/28"
+          text: "已运行时间："
+          unit: "天"
+        pv:
+          enable: true
+          text: "本站总浏览量："
+          unit: "次"
+          vercount: true
+        uv:
+          enable: true
+          text: "本站访客数："
+          unit: "人"
+          vercount: true
