@@ -13,19 +13,19 @@ tags:
 # 安装CC Switch
 这个[Github Release链接](https://github.com/farion1231/cc-switch/releases/)直达下载，选择合适的操作系统版本安装即可。
 
-![CC Switch截图](./如何将DeepSeek-V4-接入-Claude-Code/cc_switch.png)
+![CC Switch截图](cc_switch.png)
 
 进入CC Switch之后，点击右上角的橙色加号，就可以添加模型提供商的设置了。
 
-![添加供应商 图1](./如何将DeepSeek-V4-接入-Claude-Code/add_provider1.png)
+![添加供应商 图1](add_provider1.png)
 
 选中DeepSeek,接着去获取一个API Key。
 [DeepSeek 开放平台 控制台获取API Key](https://platform.deepseek.com/api_keys)
 
 将API Key 填入框中，模型设置如图那样改。
-![填写API Key](./如何将DeepSeek-V4-接入-Claude-Code/add_provider2.png)
+![填写API Key](add_provider2.png)
 
-![模型设置](./如何将DeepSeek-V4-接入-Claude-Code/model_settings.png)
+![模型设置](model_settings.png)
 
 Haiku 对应 `deepseek-v4-flash[1m]`,其他的对应`deepseek-v4-pro[1m]`，保存设置后回到主页面，将DeepSeek的新设置选中就可以在终端中输入`claude`开始编码了！
 

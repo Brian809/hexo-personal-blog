@@ -16,9 +16,9 @@ tags:
 ## 如何充值？
 1. 访问[OpenRouter](https://openrouter.ai)
 2. 要填写有关的信息（邮政编码地址之类），接着访问[OpenRouter点数](https://openrouter.ai/settings/credits)
-![图1](./Openrouter大模型平台/image1.png)
+![图1](image1.png)
 3. 点击"Add Credits"，出现一个这样的界面：
-![图2](./Openrouter大模型平台/image2.png)
+![图2](image2.png)
 4. 在这个界面，你可能找不到国内的支付方式的选项，其实只需打开页面中的“Use One-time payment methods”开关，此时你就会发现你可以使用微信或者支付宝充值点数了
 
 一般的，你需要充值10美元，调用免费模型才不会受到限制。
