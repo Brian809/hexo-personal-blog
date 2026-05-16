@@ -151,7 +151,7 @@ sidebar:
       shape: circle # circle(圆形) 或 rectangle(矩形)
       url: /about/
       title: Brianeee
-      subtitle: 一名初三学生……
+      subtitle: 没啥可说的，分享探究历程
       jinrishici: false
       social: social # 引用上面定义的 social 配置
 
