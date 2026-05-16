@@ -12,6 +12,24 @@ cover:
   # 封面背景图片
   background:
     - https://picsum.photos/1920/1080 # 可以设置多张，随机显示
+  # 封面功能菜单（覆盖主题默认的 文档/帮助/示例/社区/博客/源码）
+  features:
+    - name: 博客
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg
+      url: /
+    - name: 归档
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg
+      url: /archives/
+    - name: 标签
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f516.svg
+      url: /tags/
+    - name: 关于
+      icon: #
+      img: volantis-static/media/twemoji/assets/svg/1f9ec.svg
+      url: /about/
 
 # ==================== 2. 导航栏配置 ====================
 # 修改顶部导航菜单
